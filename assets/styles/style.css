@@ -263,6 +263,8 @@ body{
 @media (max-width: 900px){
   .split{
     grid-template-columns: 1fr;
+    height: auto;           /* не форсира 100vh на мобилен */
+    min-height: 100vh;
   }
 
   .left,
@@ -270,8 +272,10 @@ body{
     padding: 48px 28px;
   }
 
-  .gifBox img{
-    width: min(380px, 95%);
+  /* GIF кутията да се свива спрямо екрана */
+  .gifBox{
+    width: min(320px, 80vw);
+    height: min(320px, 80vw);
   }
 
   .leftText h1{
@@ -280,5 +284,17 @@ body{
 
   .leftText .sub{
     font-size: 18px;
+  }
+
+  /* Клавишите да се свиват на малък екран */
+  .keypad{
+    grid-template-columns: repeat(3, min(80px, 24vw));
+    gap: 12px;
+  }
+
+  .key{
+    width: min(80px, 24vw);
+    height: min(80px, 24vw);
+    font-size: 24px;
   }
 }
