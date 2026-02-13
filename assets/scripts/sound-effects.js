@@ -4,7 +4,7 @@ const selectSound = new Audio('assets/audio/select.mp3');
 const clickSound = new Audio('assets/audio/click.mp3');
 
 hoverSound.volume = 0.1;
-EnterBtnSound.volume = 0.2;
+EnterBtnSound.volume = 0.1;
 selectSound.volume = 0.1;
 clickSound.volume = 0.3;
 
