@@ -25,17 +25,6 @@
         animation: fadeIn 2s ease;
     }
 
-    @keyframes fadeIn {
-        from { 
-            opacity: 0; 
-            transform: translateY(-30px); 
-        }
-        to { 
-            opacity: 1; 
-            transform: translateY(0); 
-        }
-    }
-
     .menuBtn {
         width: 200px;
         height: 200px;
@@ -92,6 +81,38 @@
         z-index: 20;
     }
 
+    .retryLink {
+        position: fixed;
+        bottom: 30px;
+        left: 10%;
+        right: 10%;
+        padding-bottom:30px;
+        font-size: 25px;
+        text-align: center;
+        font-weight: 700;
+        text-decoration: none;
+        color: #b4879d;
+        animation: fadeIn 2s ease;
+        animation-delay: 1s;
+        animation-fill-mode: backwards;
+    }
+
+    .retryLink:hover {
+        text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+        from { 
+            opacity: 0; 
+            transform: translateY(-30px); 
+        }
+        to { 
+            opacity: 1; 
+            transform: translateY(0); 
+        }
+    }
+
+
     @media (max-width: 768px) {
         .menuPage {
             padding: 48px 32px;
@@ -115,8 +136,14 @@
             transform: rotate(10deg);
         }
       .menuBtn:nth-child(3) {
-            bottom: 12%;
+            bottom: 15%;
             left: 50%;
             transform: translateX(-50%) rotate(-5deg);
+      }
+      .retryLink {
+            bottom: 10px;
+            word-break: break-word;   /* разрешава пренасяне */
+            overflow-wrap: break-word;
+            font-size: 20px;
       }
     }

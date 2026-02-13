@@ -13,7 +13,7 @@ h1{
   font-weight: 900;
   letter-spacing: -0.6px;
   word-break: break-word;   /* разрешава пренасяне */
-  overflow-wrap: break-word;
+  overflow-wrap: break-word; 
   max-width: 100%;
   
 }
